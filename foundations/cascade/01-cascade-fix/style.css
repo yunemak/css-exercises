@@ -5,16 +5,18 @@ body {
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
-  font-weight: 800;
-}
-
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .para {
   font-size: 22px;
+}
+
+/* here changed the order */
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .confirm {
@@ -39,4 +41,16 @@ div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/* My solution */
+
+#confirm-button {
+  background-color: green;
+  color: white;
+}
+
+.text.child {
+  font-weight: bold;
+  font-size: 14px;
 }

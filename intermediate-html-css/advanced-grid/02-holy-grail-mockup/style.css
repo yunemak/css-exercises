@@ -94,18 +94,28 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 2fr 1fr 10fr 1fr;
 	gap: 4px;
 }
 
 .header {
 	grid-column: 1 / -1;
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 1fr 3fr;
+	justify-items: end;
+}
+
+.header > .logo {
+	justify-self: start;
 }
 
 .menu > ul {
+	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	justify-items: space-between;
+	align-items: center;
+	gap: 100px;
 }
 
 .nav > ul {
@@ -117,18 +127,22 @@
 	display: grid;
 	gap: 50px;
 	grid-template-rows: repeat(4, 1fr);
-	justify-content: center;
+	grid-row: 2 / -2;
 }
 
 .article {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-template-rows: repeat(auto-fill, 200px);
+	/* grid-template-rows: repeat(auto-fill, 200px); */
 	gap: 15px;
 }
 
+.article > .card {
+	height: 200px;
+}
+
 .nav, .article {
-	grid-column: 2 / -1;
+	grid-column: 2;
 }
 
 .footer {

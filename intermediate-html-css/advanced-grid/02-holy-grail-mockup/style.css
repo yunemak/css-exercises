@@ -119,8 +119,10 @@
 }
 
 .nav > ul {
+	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
 }
 
 .sidebar {
